@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>PhoneGap Example</title>
+<script type="text/javascript" charset="utf-8" src="js/cordova.js"></script>
+<script type="text/javascript">
+document.addEventListener("deviceready", onDeviceReady, false);
+function onDeviceReady() {
+navigator.notification.beep(2);
+showDeviceInfo();
+alert("PhoneGap loaded");
+}
+function showDeviceInfo() {
+	alert("name: " + device.name + "\n" +
+	"cordova: " + device.cordova + "\n" +
+	"platform: " + device.platform + "\n" +
+	"uuid: " + device.uuid + "\n" +
+	"version: " + device.version);
+	}
+
+</script>
+</head>
+<body>
+<h1>Hello World!</h1>
+<div data-role="content">
+<ul data-role="listview">
+<li><a href="#">Post 1</a></li>
+<li><a href="#">Post 2</a></li>
+<li><a href="#">Post 3</a></li>
+</ul>
+</div>
+</body>
+</html>
